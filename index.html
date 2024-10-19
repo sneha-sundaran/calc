@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="calc">
+    <input type="" id="output" >
+<div class="outpart " id="inputvalue">
+    
+       <div class="row-1 ">
+        <button  onclick="find('1')">1</button>
+        <button onclick="find('2')">2</button>
+        <button onclick="find('3')">3</button>
+        <button onclick="find('+')">+</button>
+       </div>
+       <div class="row-2">
+        <button onclick="find('4')">4</button>
+        <button onclick="find('5')">5</button>
+        <button onclick="find('6')">6</button>
+        <button onclick="find('-')">-</button>
+       </div>
+       <div class="row-3">
+        <button onclick="find('7')">7</button>
+        <button onclick="find('8')">8</button>
+        <button onclick="find('9')">9</button>
+        <button onclick="clear()">AC</button>
+       </div>
+       <div class="row-4">
+        <button onclick="find('0')" >0</button>
+        <button onclick="find('.')">.</button>
+        <button onclick="find('*')">*</button>
+        <button onclick="calulation('=')">=</button>
+       </div>
+</div>
+</div>
+</body>
+<script>
+    find=(content)=>{
+        
+
+console.log(content);
+output.value+=content
+
+
+
+
+        
+        
+    }
+    calulation=()=>{
+        output.value=eval(output.value)
+
+    }
+   
+    
+</script>
+</html>
